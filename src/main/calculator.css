@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #2c3e50, #4d4e50);
+    color: #ecf0f1;
+    font-family: Arial, sans-serif;
+    transition: background 0.3s; /* Transição suave para o fundo */
+}
+
+.calculator {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    transition: background 0.3s, color 0.3s; /* Transição suave */
+}
+
+.dark {
+    background: #ffffff; /* Fundo da calculadora clara */
+    color: #333; /* Texto escuro */
+    
+}
+
+.light {
+    background: #0c0029; /* Fundo da calculadora escura */
+    color: #ffffff; /* Texto claro */
+}
+
+.theme-switch {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.theme-switch label {
+    cursor: pointer;
+    color: inherit; /* Cor do texto do switch */
+}
+
+.display {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.input {
+    font-size: 24px;
+    min-height: 40px;
+}
+
+.result {
+    font-size: 32px;
+    color: #1abc9c; /* Cor do resultado */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #485766; /* Cor dos botões */
+    color: #ecf0f1; /* Cor do texto dos botões */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #1abc9c; /* Cor ao passar o mouse */
+}
+
+button:active {
+    transform: scale(0.95); /* Efeito de clique */
+    background-color: #16a085; /* Cor ao clicar */
+}
+
+/* Estilos para o tema escuro */
+body.dark {
+    background: linear-gradient(to right, #1a1a1a, #2c3e50); /* Gradiente escuro */
+}
